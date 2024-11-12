@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Eliminar Contacto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      width: 300px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      color: white;
+      background-color: #007BFF;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #0069D9;
+    }
+    .message {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h2>Eliminar Contacto</h2>
+  <form action="process_eliminar_contacto.php" method="post">
+    <label for="nombre">Nombre del Contacto:</label>
+    <input type="text" name="nombre" required>
+    <input type="submit" class="button" value="Eliminar Contacto">
+  </form>
+</div>
+</body>
+</html>
